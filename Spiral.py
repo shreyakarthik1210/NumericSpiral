@@ -1,6 +1,3 @@
-#  File: Spiral.py
-#  Student Name: Shreya Karthikeyan
-#  Student UT EID: sk57936
 
 import sys
 
@@ -139,8 +136,6 @@ def sum_adjacent_numbers(spiral, n):
     return sum
 
 
-# Added for debugging only. No changes needed.
-# Do not call this method in submitted version of your code.
 # Input: spiral - the number spiral
 # Output: printed spiral
 def print_spiral(spiral):
@@ -151,13 +146,10 @@ def print_spiral(spiral):
         print()
 
 
-''' ##### DRIVER CODE #####
-    ##### Remember to change the debug flag before submitting. '''
 
-# set the input source - change to False before submitting
 
 def main():
-    debug = False
+    debug = True
     if debug:
         in_data = open('spiral.in')
     else:
@@ -176,7 +168,7 @@ def main():
         spiral = create_spiral(size)
 
         # use following line for debugging only
-        #print_spiral(spiral)
+        print_spiral(spiral)
 
         # process and print adjacent sums
         print_adjacent_sums(in_data, spiral)
